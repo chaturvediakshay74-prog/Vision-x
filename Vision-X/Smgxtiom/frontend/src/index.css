@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-light dark:bg-dark text-gray-900 dark:text-gray-100 font-sans;
+}
+
+/* Glassmorphism effect */
+.glass {
+  @apply bg-white/20 backdrop-blur-md border border-white/30 dark:bg-white/5 dark:border-white/10;
+}
+
+.glass-dark {
+  @apply bg-black/20 backdrop-blur-md border border-black/30;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-6 py-2 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-semibold hover:shadow-lg transition-smooth;
+}
+
+.btn-secondary {
+  @apply px-6 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg font-semibold hover:shadow-md transition-smooth;
+}
+
+/* Cards */
+.card {
+  @apply bg-white dark:bg-darkAlt rounded-xl shadow-md hover:shadow-lg transition-smooth border border-gray-200 dark:border-gray-700;
+}
+
+/* Input styles */
+.input-field {
+  @apply w-full px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-darkAlt dark:text-white focus:outline-none focus:ring-2 focus:ring-primary transition-smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-darkAlt;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-600 rounded-lg hover:bg-gray-500;
+}
